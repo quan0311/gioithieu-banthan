@@ -1,26 +1,40 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 20px;
+    background-image: url('path_to_your_image.jpg'); /* Thay đổi đường dẫn đến hình ảnh */
+    background-size: cover; /* Hình ảnh sẽ bao phủ toàn bộ nền */
+    background-position: center; /* Đặt hình ảnh ở giữa */
+    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+    font-family: Arial, sans-serif; /* Font chữ */
+    color: #333; /* Màu chữ */
+    margin: 0; /* Loại bỏ khoảng trắng mặc định */
+    padding: 20px; /* Thêm khoảng cách bên trong */
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Chiều rộng tối đa của container */
+    margin: auto; /* Căn giữa */
+    background: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
+    padding: 20px; /* Khoảng cách bên trong */
+    border-radius: 8px; /* Bo tròn các góc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
 }
 
 h1 {
-    text-align: center;
-    color: #4CAF50;
+    text-align: center; /* Căn giữa tiêu đề */
+    color: #4CAF50; /* Màu tiêu đề */
 }
 
-.bio {
-    margin-top: 20px;
-    line-height: 1.6;
+button {
+    display: block; /* Hiển thị nút dưới dạng khối */
+    margin: 20px auto; /* Căn giữa */
+    padding: 10px 20px; /* Khoảng cách bên trong */
+    background-color: #4CAF50; /* Màu nền của nút */
+    color: white; /* Màu chữ của nút */
+    border: none; /* Không có đường viền */
+    border-radius: 5px; /* Bo tròn các góc nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay */
 }
+
+button:hover {
+    background-color: #45a049; /* Màu nền của nút khi di chuột qua */
+}
+
