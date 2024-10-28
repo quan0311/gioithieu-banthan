@@ -1,33 +1,30 @@
 body {
-    background-image: url('path_to_your_image.jpg'); /* Thay đổi đường dẫn đến hình ảnh */
-    background-size: cover; /* Hình ảnh sẽ bao phủ toàn bộ nền */
-    background-position: center; /* Đặt hình ảnh ở giữa */
-    background-repeat: no-repeat; /* Không lặp lại hình ảnh */
-    font-family: Arial, sans-serif; /* Font chữ */
-    color: #333; /* Màu chữ */
+    background-color: #4CAF50; /* Màu nền xanh lá cây */
+    font-family: Arial, sans-serif; /* Font chữ cho trang */
+    color: #fff; /* Màu chữ trắng */
     margin: 0; /* Loại bỏ khoảng trắng mặc định */
-    padding: 20px; /* Thêm khoảng cách bên trong */
+    padding: 20px; /* Khoảng cách bên trong */
 }
 
 .container {
-    max-width: 600px; /* Chiều rộng tối đa của container */
-    margin: auto; /* Căn giữa */
+    max-width: 600px; /* Chiều rộng tối đa của nội dung */
+    margin: auto; /* Căn giữa nội dung */
     background: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
-    padding: 20px; /* Khoảng cách bên trong */
+    padding: 20px; /* Khoảng cách bên trong cho container */
     border-radius: 8px; /* Bo tròn các góc */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho container */
 }
 
 h1 {
     text-align: center; /* Căn giữa tiêu đề */
-    color: #4CAF50; /* Màu tiêu đề */
+    color: #333; /* Màu tiêu đề */
 }
 
 button {
     display: block; /* Hiển thị nút dưới dạng khối */
-    margin: 20px auto; /* Căn giữa */
-    padding: 10px 20px; /* Khoảng cách bên trong */
-    background-color: #4CAF50; /* Màu nền của nút */
+    margin: 20px auto; /* Căn giữa nút */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    background-color: #333; /* Màu nền của nút */
     color: white; /* Màu chữ của nút */
     border: none; /* Không có đường viền */
     border-radius: 5px; /* Bo tròn các góc nút */
@@ -35,6 +32,5 @@ button {
 }
 
 button:hover {
-    background-color: #45a049; /* Màu nền của nút khi di chuột qua */
+    background-color: #555; /* Màu nền khi di chuột qua nút */
 }
-
