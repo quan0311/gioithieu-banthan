@@ -1,36 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    background-color: #4CAF50; /* Màu nền xanh lá cây */
-    font-family: Arial, sans-serif; /* Font chữ cho trang */
-    color: #fff; /* Màu chữ trắng */
-    margin: 0; /* Loại bỏ khoảng trắng mặc định */
-    padding: 20px; /* Khoảng cách bên trong */
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    max-width: 600px; /* Chiều rộng tối đa của nội dung */
-    margin: auto; /* Căn giữa nội dung */
-    background: rgba(255, 255, 255, 0.8); /* Nền trắng trong suốt */
-    padding: 20px; /* Khoảng cách bên trong cho container */
-    border-radius: 8px; /* Bo tròn các góc */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Đổ bóng cho container */
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.social-icons a:hover {
+    text-decoration: underline;
 }
 
 h1 {
-    text-align: center; /* Căn giữa tiêu đề */
-    color: #333; /* Màu tiêu đề */
+    font-size: 24px;
+    color: #333;
 }
 
-button {
-    display: block; /* Hiển thị nút dưới dạng khối */
-    margin: 20px auto; /* Căn giữa nút */
-    padding: 10px 20px; /* Khoảng cách bên trong nút */
-    background-color: #333; /* Màu nền của nút */
-    color: white; /* Màu chữ của nút */
-    border: none; /* Không có đường viền */
-    border-radius: 5px; /* Bo tròn các góc nút */
-    cursor: pointer; /* Hiển thị con trỏ chuột dạng tay */
+p {
+    color: #555;
+    margin-bottom: 5px;
 }
 
-button:hover {
-    background-color: #555; /* Màu nền khi di chuột qua nút */
+.content {
+    margin-top: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #e74c3c;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
 }
