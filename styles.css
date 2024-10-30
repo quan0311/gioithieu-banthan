@@ -6,44 +6,29 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: #FFA500; /* Nền màu cam */
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 100vh;
+    padding: 20px;
 }
 
 .container {
-    width: 80%;
-    max-width: 800px;
-    background-color: #fff;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
 .profile-pic {
-    width: 150px;                /* Độ rộng ảnh */
-    height: 150px;               /* Chiều cao ảnh */
-    border-radius: 50%;          /* Tạo hiệu ứng tròn */
-    border: 5px solid #3498db;   /* Màu viền và độ dày viền */
-    padding: 5px;                /* Khoảng cách giữa viền và ảnh */
-    background-color: white;     /* Màu nền cho viền (nếu cần) */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;           /* Bo tròn ảnh */
+    border: 4px solid #3498db;    /* Viền màu xanh */
     margin-bottom: 10px;
-}
-
-.social-icons a {
-    color: #3498db;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.social-icons a:hover {
-    text-decoration: underline;
 }
 
 h1 {
@@ -51,36 +36,51 @@ h1 {
     color: #333;
 }
 
-p {
+.profile p {
     color: #555;
-    margin-bottom: 5px;
+    font-size: 16px;
+    margin: 5px 0;
 }
 
-.content {
-    margin-top: 20px;
+.social-icons a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
 
 .section {
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 h2 {
-    color: #e74c3c;
     font-size: 20px;
+    color: #333;
     margin-bottom: 10px;
 }
 
 h3 {
-    color: #333;
     font-size: 18px;
-    margin-top: 10px;
+    color: #333;
+    margin-top: 15px;
+}
+
+p, ul li {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0;
 }
 
 ul {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 0;
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
