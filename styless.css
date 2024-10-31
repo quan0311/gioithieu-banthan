@@ -1,46 +1,62 @@
-/* Đặt toàn màn hình và căn giữa nội dung */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+/* CSS cho toàn màn hình */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Nền đen Halloween */
+    color: #f3f3f3; /* Màu chữ sáng để nổi bật trên nền đen */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* Chiều cao tối thiểu là 100% chiều cao của màn hình */
+    line-height: 1.6; /* Tăng chiều cao dòng */
 }
 
 .container {
-    width: 100%;
-    max-width: 1400px; /* Đặt giới hạn chiều rộng tối đa */
+    width: 100vw;
+    height: 100vh;
+    max-width: 1400px;
     padding: 20px;
-    background-color: #faad6f;
+    background-color: #2d2d2d; /* Nền tối cho khung chính */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     display: flex;
     gap: 20px;
+    overflow-y: auto;
 }
 
 /* Phần hồ sơ cá nhân */
 .profile {
-    width: 20%;
+    width: 25%;
     text-align: center;
 }
 
-/* Ảnh hồ sơ */
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+    border: 3px solid #ff7518; /* Viền cam cho phong cách Halloween */
 }
 
 h1 {
-    font-size: 1.5em;
-    color: #444;
-    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #ff7518; /* Màu cam cho tên tiêu đề */
+    margin-bottom: 15px;
+    letter-spacing: 0.5px; /* Tăng khoảng cách giữa các chữ */
+}
+
+.contact-info {
+    text-align: left;
+    flex-direction: column;
+    margin: 0 auto;
+    width: fit-content;
+    line-height: 1.8em;
 }
 
 .social-icons a {
@@ -48,9 +64,9 @@ h1 {
     align-items: center;
     gap: 5px;
     text-decoration: none;
-    color: #333;
+    color: #ff7518; /* Màu cam cho liên kết mạng xã hội */
     margin: 10px 0;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .social-icons img {
@@ -58,27 +74,35 @@ h1 {
     height: 20px;
 }
 
-/* Phần nội dung chia ba cột */
+/* Phần nội dung chia làm 2 cột */
 .content {
-    flex: 1; /* Phần nội dung chiếm phần còn lại */
     display: flex;
     gap: 20px;
+    width: 75%;
 }
 
-/* Cột thông tin bên trong nội dung */
 .column {
     flex: 1;
+    background-color: #292929; /* Nền tối cho các cột */
+    padding: 15px;
+    border-radius: 10px;
+    overflow-y: auto;
 }
 
 h2 {
-    font-size: 1.2em;
-    color: #0066cc;
-    margin-bottom: 10px;
+    color: #ff7518; /* Màu cam cho tiêu đề */
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ff7518;
+    letter-spacing: 0.5px; /* Tăng khoảng cách giữa các chữ */
 }
 
 h3 {
-    margin-top: 15px;
-    color: #444;
+    color: #f3f3f3;
+    font-size: 1.3em;
+    margin: 15px 0 10px 0;
+    line-height: 1.5;
 }
 
 ul {
@@ -88,15 +112,28 @@ ul {
 
 ul li:before {
     content: "• ";
-    color: #0066cc;
+    color: #ff7518; /* Màu cam cho các dấu chấm đầu dòng */
     font-weight: bold;
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #f3f3f3;
+    line-height: 1.7;
 }
 
 p, ul {
     font-size: 0.9em;
-    color: #555;
+    color: #f3f3f3;
+}
+
+/* Khoảng cách giữa các liên kết mạng xã hội */
+.social-icons a {
+    color: #ff7518; /* Màu cam cho liên kết mạng xã hội */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+.social-icons a:hover {
+    text-decoration: underline;
 }
