@@ -1,86 +1,153 @@
-* {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3107e9;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-body {
-    background-color: #FFA500; /* Nền màu cam */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
-    padding: 20px;
 }
-
 .container {
-    max-width: 600px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    width: 100%;            /* Chiều rộng toàn trang */
+    max-width: 1200px;      /* Giới hạn chiều rộng tối đa */
+    margin: 20px auto;
+    background-color: #f5f1f1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
 .profile-pic {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;           /* Bo tròn ảnh */
-    border: 4px solid #3498db;    /* Viền màu xanh */
+    width: 200px;
+    height: 200px;
+    border-r body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .profile {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+
+    .profile h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .profile p {
+        font-size: 1.1em;
+        margin: 5px 0;
+        color: #666;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+
+    .social-icons a {
+        color: #0066cc;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .social-icons a:hover {
+        text-decoration: underline;
+    }
+
+    .section {
+        margin-bottom: 30px;
+    }
+
+    .section h2 {
+        color: #333;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #0066cc;
+    }
+
+    .section h3 {
+        color: #444;
+        font-size: 1.3em;
+        margin: 15px 0 10px 0;
+    }
+
+    .section p {
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .section ul {
+        list-style: none;
+        padding-left: 20px;
+    }
+
+    .section li {
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 15px;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile h1 {
+            font-size: 2em;
+        }
+    }adius: 50%;
+    object-fit: cover;
     margin-bottom: 10px;
 }
-
 h1 {
-    font-size: 24px;
     color: #333;
 }
-
-.profile p {
-    color: #555;
-    font-size: 16px;
-    margin: 5px 0;
-}
-
 .social-icons a {
-    color: #3498db;
     text-decoration: none;
+    color: #a02709;
     margin: 0 10px;
 }
-
-.social-icons a:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
-
 .section {
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
-
 h2 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
 }
-
-h3 {
-    font-size: 18px;
-    color: #333;
-    margin-top: 15px;
-}
-
-p, ul li {
-    color: #555;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 5px 0;
-}
-
 ul {
-    list-style-type: none;
-    padding-left: 0;
+    padding-left: 20px;
 }
-
-ul li {
-    margin: 5px 0;
+li {
+    margin-bottom: 5px;
 }
