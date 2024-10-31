@@ -10,7 +10,7 @@ body {
 }
 .container {
     width: 100%;            /* Chiều rộng toàn trang */
-    max-width: 1200px;      /* Giới hạn chiều rộng tối đa */
+    max-width: 1000px;      /* Giới hạn chiều rộng tối đa */
     margin: 20px auto;
     background-color: #f5f1f1;
     padding: 30px;
