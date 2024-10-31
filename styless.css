@@ -1,45 +1,102 @@
+/* Đặt toàn màn hình và căn giữa nội dung */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f9f9f9;
     margin: 0;
     padding: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Chiều cao tối thiểu là 100% chiều cao của màn hình */
 }
+
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
+    width: 100%;
+    max-width: 1400px; /* Đặt giới hạn chiều rộng tối đa */
     padding: 20px;
+    background-color: #faad6f;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
 }
+
+/* Phần hồ sơ cá nhân */
 .profile {
+    width: 20%;
     text-align: center;
-    margin-bottom: 20px;
 }
+
+/* Ảnh hồ sơ */
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    margin-bottom: 10px;
 }
+
 h1 {
-    color: #333;
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 10px;
 }
+
 .social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
     text-decoration: none;
-    color: #0066cc;
+    color: #333;
+    margin: 10px 0;
+    font-size: 0.9em;
 }
-.section {
-    margin-bottom: 20px;
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
 }
+
+/* Phần nội dung chia ba cột */
+.content {
+    flex: 1; /* Phần nội dung chiếm phần còn lại */
+    display: flex;
+    gap: 20px;
+}
+
+/* Cột thông tin bên trong nội dung */
+.column {
+    flex: 1;
+}
+
 h2 {
+    font-size: 1.2em;
     color: #0066cc;
-    border-bottom: 2px solid #0066cc;
-    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
+
+h3 {
+    margin-top: 15px;
+    color: #444;
+}
+
 ul {
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
 }
+
+ul li:before {
+    content: "• ";
+    color: #0066cc;
+    font-weight: bold;
+}
+
 li {
     margin-bottom: 5px;
+}
+
+p, ul {
+    font-size: 0.9em;
+    color: #555;
 }
